@@ -130,6 +130,7 @@
 	const searchMovie = async (query) => {
 		try {
 			movies = [];
+			newBatch = []
 			isFetching = true;
 			currentPage = 1;
 			endPoint = 'https://api.themoviedb.org/3/search/movie?';
@@ -193,6 +194,7 @@
 			let genres = $selectedGenres;
 			if (isSearch) return;
 			movies = [];
+			newBatch = []
 
 			// resetting search params to original
 			searchParams = new URLSearchParams({

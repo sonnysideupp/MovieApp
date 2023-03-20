@@ -173,7 +173,7 @@
 
 	</div> 
 
-	<div class="flex flex-col lg:-mt-60 mt-0 px-6 lg:px-0 lg:mr-4"> 
+	<div class="flex flex-col lg:-mt-60 mt-2 px-6 lg:px-0 lg:mr-4"> 
 
 	<img  key={movie.id} alt={movie.name} id={movie.id} class="rounded object-cover w-64 h-96 mb-2 lg:block hidden" src= {movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : "/fallbackMoviePoster.png"  }/>
 	

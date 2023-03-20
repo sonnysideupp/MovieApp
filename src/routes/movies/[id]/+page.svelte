@@ -173,12 +173,12 @@
 
 	</div> 
 
-	<div class="flex flex-col lg:-mt-60 mt-2 px-6 lg:px-0 lg:mr-4"> 
+	<div class="flex flex-col lg:-mt-60 mt-2 px-6 lg:px-0 lg:w-64 lg:mr-6"> 
 
 	<img  key={movie.id} alt={movie.name} id={movie.id} class="rounded object-cover w-64 h-96 mb-2 lg:block hidden" src= {movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : "/fallbackMoviePoster.png"  }/>
 	
 
-	<div class="flex flex-row justify-between mt-5 mr-8">
+	<div class="flex flex-row justify-between mt-5 mr-4">
 
 		<div class="font-semibold text-lg text-gray-500" >
 			Release date
@@ -192,7 +192,7 @@
 	</div>
 
 
-	<div class="flex flex-row justify-between mt-5 mr-8">
+	<div class="flex flex-row justify-between mt-5 mr-4">
 
 		<div class="font-semibold text-lg text-gray-500" >
 			Runtime
@@ -207,7 +207,7 @@
 
 
 	{#if movie.original_language}
-	<div class="flex flex-row justify-between mt-5 mr-8">
+	<div class="flex flex-row justify-between mt-5 mr-4 ">
 
 		<div class="font-semibold text-lg text-gray-500" >
 			Original Language
@@ -222,7 +222,7 @@
 	{/if}
 
 	{#if movie.budget}
-	<div class="flex flex-row justify-between mt-5 mr-8">
+	<div class="flex flex-row justify-between mt-5 mr-4">
 
 		<div class="font-semibold text-lg text-gray-500" >
 			Budget
@@ -238,7 +238,7 @@
 
 
 	{#if movie.revenue}
-	<div class="flex flex-row justify-between mt-5 mr-8">
+	<div class="flex flex-row justify-between mt-5 mr-4">
 
 		<div class="font-semibold text-lg text-gray-500"  >
 			Revenue

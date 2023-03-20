@@ -1,9 +1,7 @@
 <script>
 	import Header from './Header.svelte';
-	import "../app.css";
-	import BottomNav from "./BottomNav.svelte"
-
-
+	import '../app.css';
+	import BottomNav from './BottomNav.svelte';
 </script>
 
 <Header />
@@ -12,5 +10,4 @@
 	<slot />
 </main>
 
-
-<BottomNav/>
+<BottomNav />
